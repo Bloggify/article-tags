@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "A Bloggify plugin that adds the functionality to add tags to posts.",
   "main": "index.js",
-  "dependencies": {
-    "bug-killer": "0.1.1"
-  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
