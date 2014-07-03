@@ -21,3 +21,7 @@ Bloggify.emitter.on("new-post", function (data) {
     // Attach tags field
     post.tags = formData.tags.split(/[ ,]+/);
 });
+
+// Enable post tags
+Config.options = Config.options || {};
+Config.options.postTags = true;
