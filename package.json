@@ -1,6 +1,6 @@
 {
   "name": "bloggify-post-tags",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A Bloggify plugin that adds the functionality to add tags to posts.",
   "main": "index.js",
   "devDependencies": {},
