@@ -1,18 +1,14 @@
-// Add the new field to be validated
-// TODO
-//Bloggify.form["new-post"].validate["tags"] = "string,non-empty"
+Bloggify.on("article:save", function (lien, data, callback) {
 
-// Listen for new posts
-// TODO
-//Bloggify.emitter.on("new-post", function (data) {
-//
-//    // Get form data and post
-//    var formData = data.formData
-//      , post = data.newPost
-//      ;
-//
-//    // Attach tags field
-//    post.tags = formData.tags.split(/[ ,]+/);
-//});
+    data.tags = data.tags || [];
 
-console.log("Hello from post tags");
+    if (typeof data.tags !== "string") {
+        return lien.end({
+            error: "validate_error"
+          , fields: ["tags"]
+        }, 400);
+    }
+
+    data.tags = data.tags.split(/[ ,]+/);
+    callback();
+});
