@@ -1,7 +1,7 @@
 {
   "name": "bloggify-post-tags",
   "version": "1.0.0",
-  "description": "A Bloggify plugin that adds the functionality to add tags to posts.",
+  "description": "A Bloggify plugin that adds the functionality to add tags to articles.",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "keywords": [
     "bloggify",
-    "posts",
+    "articles",
     "tags"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com>",
