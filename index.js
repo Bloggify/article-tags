@@ -1,27 +1,14 @@
-// Define success
-Debug._config.success = {
-    color: "#00CF06"
-  , text: "SUCCESS"
-};
+Bloggify.on("article:save", function (lien, data, callback) {
 
-// Some output
-Debug.log("Plugin inited", "success");
+    data.tags = data.tags || [];
 
-// Add the new field to be validated
-Bloggify.form["new-post"].validate["tags"] = "string,non-empty"
+    if (typeof data.tags !== "string") {
+        return lien.end({
+            error: "validate_error"
+          , fields: ["tags"]
+        }, 400);
+    }
 
-// Listen for new posts
-Bloggify.emitter.on("new-post", function (data) {
-
-    // Get form data and post
-    var formData = data.formData
-      , post = data.newPost
-      ;
-
-    // Attach tags field
-    post.tags = formData.tags.split(/[ ,]+/);
+    data.tags = data.tags.split(/[ ,]+/);
+    callback();
 });
-
-// Enable post tags
-Config.options = Config.options || {};
-Config.options.postTags = true;

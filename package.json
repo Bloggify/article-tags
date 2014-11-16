@@ -1,7 +1,7 @@
 {
-  "name": "bloggify-post-tags",
-  "version": "1.0.0",
-  "description": "A Bloggify plugin that adds the functionality to add tags to posts.",
+  "name": "bloggify-article-tags",
+  "version": "2.0.0",
+  "description": "A Bloggify plugin that adds the functionality to add tags to articles.",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BloggifyPlugins/post-tags.git"
+    "url": "https://github.com/BloggifyPlugins/article-tags.git"
   },
   "keywords": [
     "bloggify",
-    "posts",
+    "articles",
     "tags"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BloggifyPlugins/post-tags/issues"
+    "url": "https://github.com/BloggifyPlugins/article-tags/issues"
   },
-  "homepage": "https://github.com/BloggifyPlugins/post-tags"
+  "homepage": "https://github.com/BloggifyPlugins/article-tags"
 }
