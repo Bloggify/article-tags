@@ -3,23 +3,22 @@
   "version": "3.0.0",
   "description": "A Bloggify plugin that adds the functionality to add tags to articles.",
   "main": "lib/index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BloggifyPlugins/article-tags.git"
-  },
   "keywords": [
     "bloggify",
     "articles",
     "tags"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bloggify/article-tags.git"
+  },
   "license": "KINDLY",
   "bugs": {
-    "url": "https://github.com/BloggifyPlugins/article-tags/issues"
+    "url": "https://github.com/Bloggify/article-tags/issues"
   },
-  "homepage": "https://github.com/BloggifyPlugins/article-tags"
+  "homepage": "https://github.com/Bloggify/article-tags"
 }
