@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/Bloggify/article-tags/issues"
   },
-  "homepage": "https://github.com/Bloggify/article-tags"
+  "homepage": "https://github.com/Bloggify/article-tags",
+  "blah": {
+    "configuration": {
+      "name": "article-tags",
+      "source": "git@github.com:Bloggify/article-tags.git",
+      "version": "master"
+    }
+  }
 }

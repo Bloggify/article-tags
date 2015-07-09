@@ -19,13 +19,15 @@ A Bloggify plugin that adds the functionality to add tags to articles.
 
 ## Configuration
 
-```json
+```sh
 {
-  "name": "article-tags",
-  "source": "git@github.com:BloggifyPlugins/article-tags.git",
-  "version": "2.0.0"
+    "name": "article-tags",
+    "source": "git@github.com:Bloggify/article-tags.git",
+    "version": "master"
 }
 ```
+
+## Documentation
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
