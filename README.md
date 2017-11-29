@@ -25,6 +25,7 @@ const ws = require("bloggify-ws");
 const action = ws("my-action", (err, data, cb) => {
     if (err) {
         /* The server sent an error */
+        /* Or got disconnected (e.g. server down, internet down) */
     }
 
     /* do something with data coming from the server */
@@ -84,7 +85,7 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 
 [MIT][license] © [Bloggify][website]
 
-[license]: http://showalicense.com/?fullname=Bloggify%20%3Csupport%40bloggify.org%3E%20(https%3A%2F%2Fbloggify.org)&year=2017#license-mit
+[license]: http://showalicense.com/?fullname=Bloggify%20%3Csupport%40bloggify.org%3E%20(https%3A%2F%2Fbloggify.org)&year=2014#license-mit
 [website]: https://bloggify.org
 [contributing]: /CONTRIBUTING.md
 [docs]: /DOCUMENTATION.md
