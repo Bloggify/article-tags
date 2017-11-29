@@ -10,7 +10,7 @@ const action = ws("my-action", (err, data, cb) => {
     }
 
     /* do something with data coming from the server */
-    ...
+    // ...
 
     /* Send something back to the server */
     cb(null, {
@@ -19,10 +19,10 @@ const action = ws("my-action", (err, data, cb) => {
 })
 
 // Send data to the server
-action.data(...)
+action.data(/* ... */)
 
 // Send an error to the server
-action.error(...)
+action.error(/* ... */)
 
 ///// Client (browser)
 const action = Bloggify.actions.ws("my-action", (err, data, cb) => {
@@ -31,7 +31,7 @@ const action = Bloggify.actions.ws("my-action", (err, data, cb) => {
     }
 
     /* do something with data coming from the client */
-    ...
+    // ...
 
     /* Send something back to the client */
     cb(null, {
@@ -40,7 +40,7 @@ const action = Bloggify.actions.ws("my-action", (err, data, cb) => {
 })
 
 // Send data to the client
-action.data(...)
+action.data(/* ... */)
 
 // Send an error to the client
-action.error(...)
+action.error(/* ... */)
