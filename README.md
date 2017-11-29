@@ -22,7 +22,7 @@ $ npm i --save bloggify-ws
 ///// Client (browser)
 const ws = require("bloggify-ws");
 
-const action = ws("my-action", (err, data, cb) => {
+const socket = ws("my-action", (err, data, cb) => {
     if (err) {
         /* The server sent an error */
         /* Or got disconnected (e.g. server down, internet down) */
@@ -38,12 +38,13 @@ const action = ws("my-action", (err, data, cb) => {
 })
 
 // Send data to the server
-action.data(/* ... */)
+socket.data(/* ... */)
 
 // Send an error to the server
-action.error(/* ... */)
+socket.error(/* ... */)
 
-///// Client (browser)
+///// Server
+///// (in `app/actions`)
 const action = Bloggify.actions.ws("my-action", (err, data, cb) => {
     if (err) {
         /* The client sent an error */
