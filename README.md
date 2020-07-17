@@ -10,7 +10,11 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save bloggify-ws
+# Using npm
+npm install --save bloggify-ws
+
+# Using yarn
+yarn add bloggify-ws
 ```
 
 
@@ -68,12 +72,15 @@ action.error(/* ... */)
 
 
 
+
+
 ## :question: Get Help
 
 There are few ways to get help:
 
  1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
  2. For bug reports and feature requests, open issues. :bug:
+
 
 
 
